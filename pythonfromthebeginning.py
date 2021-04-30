@@ -56,3 +56,5 @@ answer = cube (7000)
 
 print (answer)
 
+print ('funktion machen geht per def, gefolgt vom namen und das argument in Klammern und abschliessend ein doppelpunkt '
+       'und dann die formel')
