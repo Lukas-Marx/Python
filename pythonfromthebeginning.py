@@ -36,3 +36,12 @@ print('antworten auf chapter 1 Fragen')
 print ('17, 11, False, True, False, %, 11, True, 3, onetwo, 1two, 111, 111, 111')
 
 f = 'bacon'<'egg'
+
+x = 200
+z = x*x*x
+
+x = 5 + 5
+
+z = x*x*x
+print ('x ist eine Variable')
+print ('um Woerter zu trennen wird ein Unterstricht verwendet')
