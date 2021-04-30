@@ -58,3 +58,8 @@ print (answer)
 
 print ('funktion machen geht per def, gefolgt vom namen und das argument in Klammern und abschliessend ein doppelpunkt '
        'und dann die formel')
+
+def print_twice(x):
+      print (x)
+      print (x)
+print_twice('lol')
