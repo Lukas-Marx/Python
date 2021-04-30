@@ -18,3 +18,11 @@ print('a==b wahr wenn gleich'
       'a>b wahr wenn a groesser b'
       'a>=b wahr wenn a groesser gleich b'
       'a!=b wahr wenn a nicht gleich b')
+
+d = 1 ==1 or 10 > 9
+e = 1 ==1 and 9 > 10
+
+print (d)
+print (e)
+print ('and wird vor or durchgefuehrt also a and b or c ist wie (a and) or c')
+
