@@ -72,3 +72,8 @@ def neg(x):
 print (neg(1))
 print (neg(-1))
 #Seite 18
+
+def is_vowel(s):
+      return s=='a' or s=='e' or s=='i' or s=='o' or s=='u'
+
+t = is_vowel('e')
