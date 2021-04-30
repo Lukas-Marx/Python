@@ -86,3 +86,9 @@ def tester_elif (s):
       else: return 0
 
 u = tester_elif(0)
+
+def add_to_ten(a,b):
+      return a + b == 10
+
+q = add_to_ten(3,7)
+
