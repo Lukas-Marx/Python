@@ -77,3 +77,12 @@ def is_vowel(s):
       return s=='a' or s=='e' or s=='i' or s=='o' or s=='u'
 
 t = is_vowel('e')
+
+print('wenn man mehr als eine Bedingung testen muss verwendet man elif')
+
+def tester_elif (s):
+      if s < 0 : return 1
+      elif s == 1 : return -1
+      else: return 0
+
+u = tester_elif(0)
