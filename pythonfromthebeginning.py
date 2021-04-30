@@ -71,4 +71,4 @@ def neg(x):
             return False
 print (neg(1))
 print (neg(-1))
-
+#Seite 18
