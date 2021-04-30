@@ -32,3 +32,7 @@ print (type(b))
 print (type('hilfe'))
 print ('str = string, bool = booleans und int = integers')
 
+print('antworten auf chapter 1 Fragen')
+print ('17, 11, False, True, False, %, 11, True, 3, onetwo, 1two, 111, 111, 111')
+
+f = 'bacon'<'egg'
