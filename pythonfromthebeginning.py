@@ -26,3 +26,9 @@ print (d)
 print (e)
 print ('and wird vor or durchgefuehrt also a and b or c ist wie (a and) or c')
 
+print ('Vergleichs operatoren haben eine hoehere Prioritaet als logische operatoren')
+print (type(a))
+print (type(b))
+print (type('hilfe'))
+print ('str = string, bool = booleans und int = integers')
+
