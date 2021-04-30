@@ -63,3 +63,12 @@ def print_twice(x):
       print (x)
       print (x)
 print_twice('lol')
+
+def neg(x):
+      if x < 0:
+            return True
+      else:
+            return False
+print (neg(1))
+print (neg(-1))
+
