@@ -45,3 +45,14 @@ x = 5 + 5
 z = x*x*x
 print ('x ist eine Variable')
 print ('um Woerter zu trennen wird ein Unterstricht verwendet')
+
+def cube(x): return x*x*x
+
+y = cube (35)
+
+print (y)
+
+answer = cube (7000)
+
+print (answer)
+
