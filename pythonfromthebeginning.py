@@ -92,3 +92,10 @@ def add_to_ten(a,b):
 
 q = add_to_ten(3,7)
 
+def welcome (Vorname, Nachname):
+      return print('Herzlich Willkommen, ' +Vorname+ ' ' + Nachname+ ' ich hoffe Sie haben eine schöne Zeit')
+
+welcome('Lukas', 'Marx')
+
+print ('eine rekursive Funktion ist eine solche, die sich selbst in sich verwendet')
+#Seite 20
