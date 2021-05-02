@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt  # Die Nr.1 der Bibliotheken zur Datenvisualisie
 import numpy as np               # Bibliothek "Nummerisches Python"
 import pandas as pd              # Bibliothek "Panel Data"
 from sklearn import linear_model
-
+import statsmodels.api as sm
 
 
 dataset = pd.read_excel("Variablen_Regression.xlsx")
@@ -22,4 +22,7 @@ regr = linear_model.LinearRegression()
 regr.fit(X,y)
 
 print ('R-Quadrat ', regr.score(X, y))
-print ('Koeffizienten: ', regr.coef_)
+print ('Koeffizienten: ', regr.summary())
+
+regr2 = sm.OLS()
+
