@@ -14,11 +14,12 @@ print(dataset.info())
 cols_ratio=['Size','Social','SIB','SIB_Vol','Impact','Impact_Vol','SII_Vol','GBF','GBE','GBV']
 cols_target=['Social_Score']
 print(cols_ratio)
-dataset_ratio=dataset.loc[:, cols_ratio]
-dataset_target=dataset[cols_target]
 X = dataset[['Size','Social','SIB','SIB_Vol','Impact','Impact_Vol','SII_Vol','GBF','GBE','GBV']]
 print(X)
 y = dataset[['Social_Score']]
 print(y)
 regr = linear_model.LinearRegression()
 regr.fit(X,y)
+
+print ('R-Quadrat ', regr.score(X, y))
+print ('Koeffizienten: ', regr.coef_)
