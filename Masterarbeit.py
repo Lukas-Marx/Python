@@ -4,7 +4,7 @@
 import matplotlib.pyplot as plt  # Die Nr.1 der Bibliotheken zur Datenvisualisierung
 import numpy as np               # Bibliothek "Nummerisches Python"
 import pandas as pd              # Bibliothek "Panel Data"
-from scipy.stats import linregress
+from sklearn import linear_model
 
 
 
@@ -20,5 +20,5 @@ X = dataset[['Size','Social','SIB','SIB_Vol','Impact','Impact_Vol','SII_Vol','GB
 print(X)
 y = dataset[['Social_Score']]
 print(y)
-#X = [Social_Score[0]
-#a = linregress(cols_ratio, cols_target)
+regr = linear_model.LinearRegression()
+regr.fit(X,y)
