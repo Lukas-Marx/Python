@@ -27,4 +27,4 @@ print ('Koeffizienten: ', regr.coef_)
 regr2 = sm.OLS(y, X)
 
 regr2_result = regr2.fit()
-
+print(regr2_result.summary())
