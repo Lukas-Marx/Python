@@ -14,7 +14,7 @@ print(dataset.info())
 cols_ratio=['Size','Social','SIB','SIB_Vol','Impact','Impact_Vol','SII_Vol','GBF','GBE','GBV']
 cols_target=['Social_Score']
 print(cols_ratio)
-X = dataset[['Size','Social','SIB','SIB_Vol','Impact','Impact_Vol','SII_Vol','GBF','GBE','GBV']]
+X = dataset[['Size','SRI','Impact','ESG','Social','SIB','GBF','GBE','GBV','Environment_Score','F1','F2','F3']]
 print(X)
 y = dataset[['Social_Score']]
 print(y)
