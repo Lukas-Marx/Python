@@ -40,7 +40,7 @@ result = regr.fit(X,y)
 print ('R-Quadrat ', regr.score(X, y))
 print ('Koeffizienten: ', result.coef_)
 
-regr2 = sm.OLS(X, y,)
+regr2 = sm.OLS(y, X)
 
 regr2_result = regr2.fit()
 print(regr2_result.summary())
