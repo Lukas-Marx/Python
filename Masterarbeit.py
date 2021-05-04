@@ -35,10 +35,10 @@ print(X)
 y = dataset[['Social_Score']]
 print(y)
 regr = linear_model.LinearRegression()
-regr.fit(X,y)
+result = regr.fit(X,y)
 
 print ('R-Quadrat ', regr.score(X, y))
-print ('Koeffizienten: ', regr.coef_)
+print ('Koeffizienten: ', result.coef_)
 
 regr2 = sm.OLS(X, y,)
 
