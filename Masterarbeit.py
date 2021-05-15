@@ -6,6 +6,7 @@ import numpy as np  # Bibliothek "Nummerisches Python"
 import statsmodels.api as sm
 import matplotlib.pyplot as plt
 import seaborn as sns
+import statsmodels.graphics.api as smg
 from statsmodels.formula.api import ols
 from statsmodels.stats.diagnostic import het_white
 from statsmodels.stats.diagnostic import normal_ad
@@ -14,8 +15,10 @@ from statsmodels.stats.outliers_influence import variance_inflation_factor
 dataset = pd.read_excel("/Users/LukasMarx/PycharmProjects/Python/Variablen_Regression.xlsx")
 print(dataset.head())
 print(dataset.info())
+x_names =['Size','SRI','Impact','ESG','Social','SIB','GBF','GBE','GBV','Environment_Score']
 X = dataset[['Size','SRI','Impact','ESG','Social','SIB','GBF','GBE','GBV','Environment_Score']]
-#y = dataset[['Social_Score']]
+print(X)
+y = dataset[['Social_Score']]
 f = 'Social_Score~Size+SRI+Impact+ESG+Social+SIB+GBF+GBE+GBV+Environment_Score'
 reg_model = ols(formula=f, data=dataset).fit()
 print(reg_model.summary())
