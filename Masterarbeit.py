@@ -2,11 +2,12 @@
 #Lukas.Marx@fau.de
 
 import pandas as pd              # Bibliothek "Panel Data"
+import numpy as np               # Bibliothek "Nummerisches Python"
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
 from statsmodels.stats.diagnostic import het_white
 
-dataset = pd.read_excel("Variablen_Regression.xlsx")
+dataset = pd.read_excel("/Users/LukasMarx/PycharmProjects/Python/Variablen_Regression.xlsx")
 print(dataset.head())
 print(dataset.info())
 
